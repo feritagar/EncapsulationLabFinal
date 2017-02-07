@@ -63,7 +63,7 @@ public class Employee {
         setSsn(ssn);
         reportService = new EmployeeReportService();
     }
-    
+
     /* 
         This should be private because it is useful only to this class and then,
         only as a helper method to other methods. This is method hiding - a type 
