@@ -9,14 +9,21 @@ package lab4;
  *
  * @author FA
  */
-public class HumanResources {
+public class HumanResourcesDepartment {
+
     private Employee employee;
-    
-    public void joinEmployee(String firstName, String lastName, String ssn){
-        Employee emp = new Employee(firstName,lastName,ssn);
+
+    public void joinEmployee(String firstName, String lastName, String ssn) {
+        Employee emp = new Employee(firstName, lastName, ssn);
         emp.setFirstName(firstName);
         emp.setLastName(lastName);
         emp.setSsn(ssn);
+        employeeOrientation(emp);
+
+    }
+
+    public void employeeOrientation(Employee emp) {
+        emp.doFirstTimeOrientation("L117");
     }
 
     public Employee getEmployee() {
@@ -26,5 +33,7 @@ public class HumanResources {
     public void setEmployee(Employee employee) {
         this.employee = employee;
     }
-    
+
+   
+   
 }

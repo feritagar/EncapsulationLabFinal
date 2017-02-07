@@ -10,5 +10,25 @@ package lab4;
  * @author FA
  */
 public class Company {
-    
+
+    private HumanResourcesDepartment hrd;
+
+    public Company() {
+        hrd = new HumanResourcesDepartment();
+    }
+
+    public void joinEmployee(String firstName, String lastName, String ssn) {
+        hrd.joinEmployee(firstName, lastName, ssn);
+        hrd.outputReport(ssn);
+
+    }
+
+    public HumanResourcesDepartment getHrd() {
+        return hrd;
+    }
+
+    public void setHrd(HumanResourcesDepartment hrd) {
+        this.hrd = hrd;
+    }
+
 }
