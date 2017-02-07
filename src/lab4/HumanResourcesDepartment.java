@@ -33,7 +33,4 @@ public class HumanResourcesDepartment {
     public void setEmployee(Employee employee) {
         this.employee = employee;
     }
-
-   
-   
 }

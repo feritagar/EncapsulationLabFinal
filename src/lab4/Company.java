@@ -19,8 +19,6 @@ public class Company {
 
     public void joinEmployee(String firstName, String lastName, String ssn) {
         hrd.joinEmployee(firstName, lastName, ssn);
-        hrd.outputReport(ssn);
-
     }
 
     public HumanResourcesDepartment getHrd() {
